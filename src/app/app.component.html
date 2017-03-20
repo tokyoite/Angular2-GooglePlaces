@@ -1,3 +1,29 @@
-<h1>
-  {{title}}
-</h1>
+﻿<div class="container">
+  <h1 class="text-center">Google Places Demo</h1>
+  <div class="well">
+    <div class="form-inline">
+      <label>Address <span class="text-danger">*</span></label>
+      <input type="text" [(ngModel)]="property.StreetAddress" name="StreetAddress" rows="2" class="form-control" (setAddress)="getAddress($event,property)" googleplace required />
+      <br /><br />
+      <div class="form-group">
+        <label>City <span class="text-danger">*</span></label><br />
+        <input type="text" [(ngModel)]="property.City" name="City" class="form-control" required />
+      </div>&nbsp;
+      <div class="form-group">
+        <label>State <span class="text-danger">*</span></label><br />
+        <input type="text" [(ngModel)]="property.State" name="state" class="form-control" required />
+      </div>&nbsp;
+      <div class="form-group">
+        <label>Zip <span class="text-danger">*</span></label><br />
+        <input type="text" [(ngModel)]="property.Zip" style="width:70px;" name="Zip" class="form-control" required>
+      </div>&nbsp;
+
+      <div class="form-group">
+        <label>County <span class="text-danger">*</span></label><br />
+        <input type="text" [(ngModel)]="property.County" name="County" class="form-control" required />
+      </div>&nbsp;
+    </div>
+    <br/>
+    <google-maps [place]="place" width="100%" height="400px"></google-maps>
+  </div>
+</div>

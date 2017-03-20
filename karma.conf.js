@@ -3,7 +3,7 @@
 
 module.exports = function (config) {
   config.set({
-    basePath: 'Angular2-GooglePlaces',
+    basePath: '',
     frameworks: ['jasmine', 'angular-cli'],
     plugins: [
       require('karma-jasmine'),

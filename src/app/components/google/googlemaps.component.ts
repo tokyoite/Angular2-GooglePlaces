@@ -30,8 +30,8 @@ export class GooglemapsComponent {
             lng = 150.644;
         }
 
-        this.el.childNodes[0]['style'].width = "100%";
-        this.el.childNodes[0]['style'].height = "400px";
+        this.el.childNodes[0]['style'].width = this.width;
+        this.el.childNodes[0]['style'].height = this.height;
 
         let map = new google.maps.Map(this.el.childNodes[0], {
             center: { lat: lat, lng: lng },

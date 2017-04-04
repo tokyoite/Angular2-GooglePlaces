@@ -1,6 +1,6 @@
 # Googleplaces
 
-Try the Demo here https://tokyoite.github.io/Angular2-GooglePlaces/
+Try the Demo: here https://tokyoite.github.io/Angular2-GooglePlaces/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
 
